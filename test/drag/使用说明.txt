@@ -1,0 +1,13 @@
+	//调用方式
+	$(dom).drag({
+			"dragTop": 0,//初始top(值为距"dragMarginTop"的间距)(默认值：0)
+			"dragLeft": 0,//初始left(默认值：0)
+			"dragTopBtmFlag":true,//设置上下贴边引力动画(默认开启：true，关闭：false)
+			"dragLeftRigFlag":true,//设置左右贴边引力动画(默认开启：true，关闭：false)
+			"dragMarginTop": 0,//距header块元素的距离(默认值：0)
+			"dragMarginBottom": 0,//距footer块元素的距离(默认值：0)
+			"dragZIndex":2//设置层级(默认值：2)
+		})
+	//兼容rem
+	dragTop/dragLeft/dragMarginTop/	dragMarginBottom均可设置rem格式 但必须以字符串形式出现
+	例：dragTop:"1.3rem"

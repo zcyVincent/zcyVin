@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+               
+<html style="font-size: 62.5%;">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,initial-scale=1.0" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.drag.js" ></script>
+	</head>
+	<style>
+		#m-fliex{position: fixed; width: 64px;}
+		#m-fliex img{width: 100%;}
+	</style>
+	
+	<body style="background: #f5f5f5;">
+		<a id="m-fliex" href="http://www.baidu.com"><img src="imgs/ico_flxe.png" alt=""></a>
+		<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+		<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+		<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+		<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+		<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p>
+	</body>
+	<script>
+		$("#m-fliex").drag({
+			"dragTop": "2rem",//初始top(值为距"dragMarginTop"的间距)(默认值：0)
+			"dragLeft": 0,//初始left(默认值：0)
+			"dragTopBtmFlag":true,
+			"dragLeftRigFlag":true,
+			"dragMarginTop": "0.3rem",//距header块元素的距离(默认值：0)
+			"dragMarginBottom": "4.8rem",//距footer块元素的距离(默认值：0)
+			"dragZIndex":2//设置层级(默认值：2)
+		})
+		$('p').on('click',function(){
+			window.location.href="http://www.sina.cn"
+		})
+	</script>
+</html>
